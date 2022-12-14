@@ -9,9 +9,17 @@
     <script src="index.js"></script>
 </head>
 <body onload="init();">
-    <form action="url" method="post">
-        <input type="text" name="test">
+    <form id="dice-form">
+        <label for="num-of-dice">How many die to you want to roll? (1, 2, or 3)</label>
+        <br>
+        <input type="number" name="num-of-dice" class="form-input" id="num-of-dice">
+        <br>
+        <label for="times-to-roll">How many times should I roll the die?</label>
+        <br>
+        <input type="number" name="times-to-roll" class="form-input" id="times-to-roll">
+        <br>
         <input type="submit" value="Roll" id="submit-button">
     </form>
+    <table id="info-table"></table>
 </body>
 </html>
